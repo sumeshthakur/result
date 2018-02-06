@@ -1,5 +1,4 @@
-[
-    {
+ {
         "url": "http://sumesh-test.surge.sh/Sample.html",
         "findings": {
             "langAttributePresent": false,
@@ -91,4 +90,3 @@
             "serverSideImagesPresent": 0
         }
     }
-]
