@@ -1,7 +1,7 @@
 
     {
         "url": ["http://sumesh-test.surge.sh/Sample.html",
-        "findings": {
+        "findings" {
             "langAttributePresent": false,
             "marqueePresent": 1,
             "blinkPresent": 0,
@@ -60,7 +60,7 @@
             "serverSideImagesPresent": 0
         }
     ],
-    {
+
         "url": "https://shwetankdixit.com/",
         "findings": {
             "langAttributePresent": true,
@@ -90,6 +90,6 @@
             },
             "serverSideImagesPresent": 0
         }
-    }
+
   ]
 }
