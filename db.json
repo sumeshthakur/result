@@ -32,7 +32,7 @@
     ],
 
         "url-2":[ "http://thal-test.surge.sh/dupids.html",
-        "findings": {
+        "findings" {
             "langAttributePresent": false,
             "marqueePresent": 0,
             "blinkPresent": 0,
@@ -62,7 +62,7 @@
     ],
 
         "url": ["https://shwetankdixit.com/",
-        "findings": {
+        "findings" {
             "langAttributePresent": true,
             "marqueePresent": 0,
             "blinkPresent": 0,
