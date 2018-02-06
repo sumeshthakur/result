@@ -1,7 +1,7 @@
 
     {
-        "url": ["http://sumesh-test.surge.sh/Sample.html",
-        "findings" {
+        "url": "http://sumesh-test.surge.sh/Sample.html"[
+        "findings": {
             "langAttributePresent": false,
             "marqueePresent": 1,
             "blinkPresent": 0,
@@ -31,8 +31,8 @@
         }
     ],
 
-        "url-2":[ "http://thal-test.surge.sh/dupids.html",
-        "findings" {
+        "url-2": "http://thal-test.surge.sh/dupids.html"[
+        "findings" : {
             "langAttributePresent": false,
             "marqueePresent": 0,
             "blinkPresent": 0,
@@ -61,8 +61,8 @@
         }
     ],
 
-        "url": ["https://shwetankdixit.com/",
-        "findings" {
+        "url":"https://shwetankdixit.com/"[
+        "findings" : {
             "langAttributePresent": true,
             "marqueePresent": 0,
             "blinkPresent": 0,
