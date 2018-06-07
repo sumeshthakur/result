@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link rel="stylesheet" href="https://unpkg.com/buefy/lib/buefy.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+   <script src="https://unpkg.com/buefy"></script>
+   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <div id="structure" >
+      <div id="apple">
+          <h1>Results:</h1>
+          <label>Number of Webpages Tested:{{ NumberWebpage }}   </label>
+          <br>
+          <label>Webpage Url Tested
+
+          <div v-for="DataResult in DataResults" class="DataResult">
+
+
+            <section>
+                <b-dropdown>
+                    <button class="button is-primary" slot="trigger">
+                    <span>URL Tested </span>
+                    <b-icon icon="menu-down"></b-icon>
+                    </button>
+
+                    <b-dropdown-item v-for="DataResult in DataResults">For:{{ DataResult.url}}  </b-dropdown-item>
+                    <b-dropdown-item></b-dropdown-item>
+                    <b-dropdown-item></b-dropdown-item>
+                </b-dropdown>
+          <h2>For:{{ DataResult.url}} </h2>
+          <label>language lang Attribute Present:{{ DataResult.findings.langAttributePresent }} </label><br>
+          <label>Number of Marquee Present:{{ DataResult.findings.marqueePresent  }} </label><br>
+          <label>Blink Present: {{  DataResult.findings.blinkPresent}}</label><br>
+          <label>Title Empty: {{ DataResult.findings.emptyTitlePresent }} </label><br>
+          <label>Object "Alt" Not Present for {{ DataResult.findings.objectAltTextNotPresent }} objects</label><br>
+          <label>No "Alt" Text Present for {{ DataResult.findings.noAltPresent.number }} images</label><br>
+          <label>Total number of {{ DataResult.findings.duplicateIdPresent.number }} duplicate tags present with names {{ DataResult.findings.duplicateIdPresent.names }}</label><br>
+          <label>Number of improper list elements {{ DataResult.findings.improperListElements }}, {{ DataResult.findings.checkProperScope.thNumber }} number of "th" have improper scope and {{ DataResult.findings.checkProperScope.tdNumber }} number of "td" have improper scope </label><br>
+        </div>
+
+    </div>
+
+
+  <script src="buefy.js"></script>
+  </body>
+</html>
