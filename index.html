@@ -9,36 +9,8 @@
   </head>
 
   <body>
-    <div id="app" class="container">
-    
-    <section>
 
-        <div class="block">
-            <button class="button is-medium is-primary"
-@click="isOpen = !isOpen">
-Toggle
-            </button>
-        </div>
 
-        <b-collapse class="panel" :open.sync="isOpen">
-            <div slot="trigger" class="panel-heading">
-<strong>Title</strong>
-            </div>
-            <p class="panel-tabs">
-<a class="is-active">All</a>
-<a>Public</a>
-<a>Private</a>
-            </p>
-            <div class="panel-block">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>
-Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. <br/>
-Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
-            </div>
-        </b-collapse>
-
-    </section>
-
-</div>
 
     <div id="structure" >
       <div id="apple">
@@ -48,38 +20,7 @@ Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum ma
           <label>Webpage Url Tested
 
           <div v-for="DataResult in DataResults" class="DataResult">
-         <div id="app" class="container">
-    
-    <section>
 
-        <div class="block">
-            <button class="button is-medium is-primary"
-@click="isOpen = !isOpen">
-Toggle
-            </button>
-        </div>
-
-        <b-collapse class="panel" :open.sync="isOpen">
-            <div slot="trigger" class="panel-heading">
-<strong>Title</strong>
-            </div>
-            <p class="panel-tabs">
-<a class="is-active">All</a>
-<a>Public</a>
-<a>Private</a>
-            </p>
-            <div class="panel-block">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>
-Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. <br/>
-Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
-            </div>
-        </b-collapse>
-
-    </section>
-
-</div>
-
-            <section>
                 <b-dropdown>
                     <button class="button is-primary" slot="trigger">
                     <span>URL Tested </span>
@@ -100,11 +41,15 @@ Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum ma
           <label>Total number of {{ DataResult.findings.duplicateIdPresent.number }} duplicate tags present with names {{ DataResult.findings.duplicateIdPresent.names }}</label><br>
           <label>Number of improper list elements {{ DataResult.findings.improperListElements }}, {{ DataResult.findings.checkProperScope.thNumber }} number of "th" have improper scope and {{ DataResult.findings.checkProperScope.tdNumber }} number of "td" have improper scope </label><br>
         </div>
-
+        <section>
+                <button class="button is-medium is-primary" @click="alert">
+                    Launch alert (default)
+                </button>
+                <button class="button is-medium is-primary" @click="alertCustom">
+                    Launch alert (custom)
+                </button>
+                <button class="button is-medium is-danger" @click="alertCustomError">
+                    Launch alert (custom)
+                </button>
+          </section>
     </div>
-
-
-  <script src="buefy.js"></script>
-           
-  </body>
-</html>
